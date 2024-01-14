@@ -1,0 +1,12 @@
+.profile{
+    height: 210px;
+    aspect-ratio: 1/1;
+    object-fit: fill;
+    margin: 10px;
+}
+
+.post{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}

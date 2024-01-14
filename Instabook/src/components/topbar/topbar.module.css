@@ -1,0 +1,46 @@
+.container{
+    height: 8vh;
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    animation: top-to-bottom 500ms ease-in-out;
+    z-index: 2;
+}
+.image{
+    height: 8vh;
+    width: 222px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.topRight{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+.name{
+    font-size: 20px;
+    color: white;
+}
+.logout{
+    cursor: pointer;
+    height: 50px;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes top-to-bottom{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .image{
+        width: 100px;
+    }
+}

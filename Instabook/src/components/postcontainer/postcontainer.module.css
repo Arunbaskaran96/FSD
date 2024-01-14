@@ -1,0 +1,56 @@
+.container{
+    border: 1px solid black;
+    width: 450px;
+    height: 500px;
+    margin-bottom: 20px;
+    animation: zoom-in-out 800ms ease-in-out;
+}
+.image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.top{
+    padding: 5px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+}
+.top p{
+    margin-left: 15px;
+}
+
+.post{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.action{
+    height: 25px;
+    cursor: pointer;
+    margin: 5px 5px 5px 5px;
+}
+
+@keyframes zoom-in-out{
+    0%{
+        transform: scale(0);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 300px;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .container{
+        margin-left: 50px;
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+    .container{
+        margin-left: 0px;
+    }
+  }

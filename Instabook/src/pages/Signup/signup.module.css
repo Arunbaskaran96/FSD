@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.form{
+    background-color: white;
+    padding: 40px;
+    z-index: 1;
+    transform:scale(0);
+    animation: form-animation 500ms ease-in-out forwards 100ms;
+}
+
+.bottom{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.link{
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+@keyframes form-animation {
+    0%{
+        transform: rotate(0deg) scale(0);
+    }
+    12%{
+        transform: rotate(45deg) scale(0.12);
+    }
+    25%{
+        transform:rotate(90deg) scale(0.25);
+    }
+    37%{
+        transform: rotate(135deg) scale(0.37);
+    }
+    50%{
+        transform:rotate(180deg) scale(0.5);
+    }
+    62%{
+        transform: rotate(225deg) scale(0.62);
+    }
+    75%{
+        transform:rotate(270deg) scale(0.75);
+    }
+    87%{
+        transform: rotate(315deg) scale(0.87);
+    }
+    100%{
+        transform:rotate(360deg)  scale(1);
+    }
+}

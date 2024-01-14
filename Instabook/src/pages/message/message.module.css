@@ -1,0 +1,97 @@
+.friend{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+    cursor: pointer;
+    transition: 800ms;
+    &:hover{
+        background-color: wheat;
+    }
+}
+.container{
+    display: flex;
+    height: 91vh;
+    overflow: hidden;
+}
+.left{
+    width: 30%;
+}
+.right{
+    width: 70%;
+}
+.rightTop{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 5px;
+    z-index: 2;
+}
+
+.name{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+.rightMiddle{
+    height: 70vh;
+    margin-top: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+.s{
+    height: 91vh;
+    overflow-y: scroll;
+}
+.msg{
+    background-color: grey;
+    min-width: 80px;
+    min-height: 30px;
+    margin-left: 5px;
+    border-radius: 10px;
+    color:white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+}
+.chatcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.friendMsg{
+    justify-content: start;
+}
+.rightMiddle::-webkit-scrollbar {
+    width: 3px;
+}
+.rightMiddle::-webkit-scrollbar-thumb{
+    background-color: teal;
+}
+
+.friends::-webkit-scrollbar{
+    width: 3px;
+}
+.friends::-webkit-scrollbar-thumb{
+    background-color: teal;
+}
+
+
+/* 
+@media only screen and (max-width: 700px) {
+    .left{
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+
+  }
+  @media only screen and (max-width: 600px) {
+    .left{
+        margin-top: 80px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+  } */

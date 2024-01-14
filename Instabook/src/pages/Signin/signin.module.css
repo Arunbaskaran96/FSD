@@ -1,0 +1,109 @@
+.container{
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.left{
+    flex: 8;
+    transform: translateX(-100%);
+    animation: left-to-right 800ms ease-in-out 50ms forwards;
+}
+.right{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    transform: translateX(100%);
+    background-image: url("/login-right-background.jpg");
+    animation: right-to-left 800ms ease-in-out 50ms forwards;
+}
+
+.companyName{
+    font-size: 26px;
+    margin-left: 20px;
+}
+.slogan{
+    font-size: 12px;
+    margin-left: 20px;
+    text-align: center;
+}
+.google{
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: red;
+}
+
+
+.top{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 85px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: fill;
+    transform: scale(0);
+    animation: logo-animation 800ms ease-in-out forwards 800ms;
+}
+.middle{
+    text-align: center;
+    margin-top: 20px;
+}
+.middle:nth-child(2) {
+    font-size: 20px;
+}
+div.middle>p{
+    color: gray;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.bottom{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+div.right h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+div.right p {
+    font-size: 20px;
+    padding: 0px 60px;
+    margin-bottom: 30px;
+}
+
+
+@keyframes left-to-right{
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes right-to-left{
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes logo-animation{
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

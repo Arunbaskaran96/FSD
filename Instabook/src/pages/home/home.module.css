@@ -1,0 +1,34 @@
+
+
+.container{
+    display: flex;
+}
+.postContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eventContainer{
+    width: 30%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .eventContainer {
+      display: none;
+    }
+
+  }
+
+@media only screen and (max-width: 700px) {
+    .postContainer{
+        margin-top: 80px;
+    }
+  }
+
+@media only screen and (max-width: 400px) {
+    .postContainer{
+        margin-left: 25px;
+    }
+  }

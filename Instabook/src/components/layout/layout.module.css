@@ -1,0 +1,10 @@
+.outletContainer{
+    margin-left: 20%;
+    padding-top: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+    .outletContainer{
+        padding-top: 0px;
+    }
+  }

@@ -1,0 +1,68 @@
+.container{
+    background-color: rgb(243, 235, 235);
+    position: fixed;
+    top: 8vh;
+    height: 92vh;
+    padding-top: 10px;
+    animation:left-to-right 800ms ease-in-out;
+}
+
+ul{
+    transition: 0.5s;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.sidebarItem{
+    margin: 30px 0px;
+    cursor: pointer;
+    padding: 10px 100px 10px 20px;
+    transition: 800ms;
+    &:hover{
+        background-color: white;
+    }
+}
+
+.image{
+    height: 30px;
+    aspect-ratio: 1/1;
+}
+.sidebarItem{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+div span {
+    margin-left: 15px;
+} 
+
+@keyframes left-to-right{
+    0%{
+        transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .text{
+        display: none;
+    }
+    .sidebarItem{
+        padding-right: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .sidebarItem{
+        padding-right: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .sidebarItem{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+  }

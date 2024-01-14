@@ -1,0 +1,19 @@
+.lg{
+    height: 170px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sm {
+    height: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+.xs{
+    height: 33px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover; 
+}
